@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buhrer Design</title>
+    <link href="./css/output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Questrial&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico" />
+    <script src="./js/nav.js"></script>
+  </head>
+  <body class="font-custom bg-black text-white">
+    <nav class="flex justify-between items-center p-4">
+      <a href="../index.html">
+        <p class="text-white text-xl">
+          Hendrich<span class="text-white text-xl">B&#252;hrer</span>
+        </p>
+      </a>
+
+      <div
+        onclick="openNav()"
+        class="hover:scale-110 transition duration-300 ease-in-out"
+      >
+        <svg
+          class="cursor-pointer"
+          xmlns="http://www.w3.org/2000/svg"
+          width="18.853"
+          height="14"
+          viewBox="0 0 18.853 12"
+        >
+          <g
+            id="Icon_feather-menu"
+            data-name="Icon feather-menu"
+            transform="translate(-4.5 -8)"
+          >
+            <path
+              id="Path_3"
+              data-name="Path 3"
+              d="M4.5,18H23.353"
+              transform="translate(0 -4)"
+              fill="none"
+              stroke="#fff"
+              stroke-linejoin="round"
+              stroke-width="2"
+            />
+            <path
+              id="Path_4"
+              data-name="Path 4"
+              d="M4.5,9H23.353"
+              transform="translate(0)"
+              fill="none"
+              stroke="#fff"
+              stroke-linejoin="round"
+              stroke-width="2"
+            />
+            <path
+              id="Path_5"
+              data-name="Path 5"
+              d="M4.5,27H23.353"
+              transform="translate(0 -8)"
+              fill="none"
+              stroke="#fff"
+              stroke-linejoin="round"
+              stroke-width="2"
+            />
+          </g>
+        </svg>
+      </div>
+
+      <div
+        onclick="exitNav()"
+        id="sideBar"
+        class="fixed top-0 right-0 bg-transparent w-0 h-full overflow-x-hidden duration-500 z-10"
+      >
+        <div
+          id="sideNav"
+          class="fixed top-0 right-0 bg-white text-black w-0 h-full flex justify-center items-center overflow-x-hidden duration-500 font-bold z-50 mb-10"
+        >
+          <a
+            href="javascript:void(0)"
+            onclick="exitNav()"
+            class="text-3xl absolute top-0 right-0 mr-3 mt-3 hover:scale-110 transition duration-300 ease-in-out"
+            >&times;</a
+          >
+
+          <ul class="text-2xl sm:text-3xl">
+            <li>
+              <img
+                src="./assets/images/profile.jpeg"
+                alt="profile"
+                class="rounded-full w-48 h-48 object-cover object-center ml-4 mb-8"
+              />
+            </li>
+            <li class="text-sm text-gray-500">Hi, I'm</li>
+            <li class="mb-20">Hendrich<br />B&#252;hrer</li>
+            <li
+              class="p-2 hover:scale-110 transition duration-300 ease-in-out hover:text-gray-500"
+            >
+              <a href="./index.html">Home</a>
+            </li>
+            <li
+              class="p-2 hover:scale-110 transition duration-300 ease-in-out hover:text-gray-500"
+            >
+              <a href="#">About</a>
+            </li>
+            <li
+              class="p-2 hover:scale-110 transition duration-300 ease-in-out hover:text-gray-500"
+            >
+              <a href="#">Portfolio</a>
+            </li>
+            <li
+              class="p-2 hover:scale-110 transition duration-300 ease-in-out hover:text-gray-500"
+            >
+              <a href="./html/skills.html">Skills</a>
+            </li>
+            <li
+              class="p-2 hover:scale-110 transition duration-300 ease-in-out hover:text-gray-500"
+            >
+              <a href="#">Contact</a>
+            </li>
+            <li>
+              <a href="https://github.com/hbuhrer"
+                ><img
+                  src="./assets/images/github.svg"
+                  alt="GitHub Link"
+                  class="w-8 h-8 mt-20 mb-2 hover:scale-110 transition duration-300 ease-in-out"
+              /></a>
+              <a href="https://www.linkedin.com/in/hendrich-bührer/"
+                ><img
+                  src="./assets/images/linkedin.svg"
+                  alt="LinkedIn Link"
+                  class="w-7 h-7 mb-2 hover:scale-110 transition duration-300 ease-in-out"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header
+      class="bg-[url('../assets/images/skyline.jpeg')] relative h-screen bg-center bg-cover bg-no-repeat"
+    >
+      <h1 class="flex text-5xl font-bold justify-center items-center pt-40">
+        Hendrich B&#252;hrer
+      </h1>
+      <h2 class="flex text-lg font-extralight justify-center items-center pb-20">
+        Full-Stack Developer and Designer
+      </h2>
+      <h3 class="flex text-md text-center font-extralight justify-center items-center pt-4 pb-2">
+        Launching Soon
+      </h3>
+
+      <form action="https://formspree.io/f/xgegyvnd" method="POST" class="flex justify-center items-center gap-3">
+        <label>
+          <input type="email" name="email" class="px-4 py-1 text-black rounded-sm focus:outline-none border-white border-2 focus:border-gray-500" placeholder="Enter Your Email Here"/>
+        </label>
+        <button type="submit" class="bg-black rounded-sm px-4 py-1 hover:scale-110 transition duration-300 ease-in-out hover:bg-gray-500 hover:border-gray-500 border-2 border-black">Notify Me</button>
+      </form>
+
+    </header>
+    <footer class="text-center p-4">&copy; 2024 by Hendrich Buhrer</footer>
+  </body>
+</html>
