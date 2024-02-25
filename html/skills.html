@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hendrich B&#252;hrer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Questrial&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico" />
+    <script src="../js/nav.js"></script>
+  </head>
+
+  <body class="font-sans bg-black text-white">
+    <nav class="flex justify-between items-center p-4">
+      <a href="../index.html">
+        <p class="text-white text-xl">
+          Hendrich<span class="text-white text-xl">B&#252;hrer</span>
+        </p>
+      </a>
+
+      <div
+        onclick="openNav()"
+        class="hover:scale-110 transition duration-300 ease-in-out"
+      >
+        <svg
+          class="cursor-pointer"
+          xmlns="http://www.w3.org/2000/svg"
+          width="18.853"
+          height="14"
+          viewBox="0 0 18.853 12"
+        >
+          <g
+            id="Icon_feather-menu"
+            data-name="Icon feather-menu"
+            transform="translate(-4.5 -8)"
+          >
+            <path
+              id="Path_3"
+              data-name="Path 3"
+              d="M4.5,18H23.353"
+              transform="translate(0 -4)"
+              fill="none"
+              stroke="#fff"
+              stroke-linejoin="round"
+              stroke-width="2"
+            />
+            <path
+              id="Path_4"
+              data-name="Path 4"
+              d="M4.5,9H23.353"
+              transform="translate(0)"
+              fill="none"
+              stroke="#fff"
+              stroke-linejoin="round"
+              stroke-width="2"
+            />
+            <path
+              id="Path_5"
+              data-name="Path 5"
+              d="M4.5,27H23.353"
+              transform="translate(0 -8)"
+              fill="none"
+              stroke="#fff"
+              stroke-linejoin="round"
+              stroke-width="2"
+            />
+          </g>
+        </svg>
+      </div>
+
+      <div
+        onclick="exitNav()"
+        id="sideBar"
+        class="fixed top-0 right-0 bg-transparent w-0 h-full overflow-x-hidden duration-500 z-10"
+      >
+        <div
+          id="sideNav"
+          class="fixed top-0 right-0 bg-white text-black w-0 h-full flex justify-center items-center overflow-x-hidden duration-500 font-bold z-50 mb-10"
+        >
+          <a
+            href="javascript:void(0)"
+            onclick="exitNav()"
+            class="text-3xl absolute top-0 right-0 mr-3 mt-3 hover:scale-110 transition duration-300 ease-in-out"
+            >&times;</a
+          >
+
+          <ul class="text-2xl sm:text-3xl">
+            <li>
+              <img
+                src="../assets/images/profile.jpeg"
+                alt="profile"
+                class="rounded-full w-48 h-48 object-cover object-center ml-4 mb-8"
+              />
+            </li>
+            <li class="text-sm text-gray-500">Hi, I'm</li>
+            <li class="mb-20">Hendrich<br />B&#252;hrer</li>
+            <li
+              class="p-2 hover:scale-110 transition duration-300 ease-in-out hover:text-gray-500"
+            >
+              <a href="../index.html">Home</a>
+            </li>
+            <li
+              class="p-2 hover:scale-110 transition duration-300 ease-in-out hover:text-gray-500"
+            >
+              <a href="#">About</a>
+            </li>
+            <li
+              class="p-2 hover:scale-110 transition duration-300 ease-in-out hover:text-gray-500"
+            >
+              <a href="#">Portfolio</a>
+            </li>
+            <li
+              class="p-2 hover:scale-110 transition duration-300 ease-in-out hover:text-gray-500"
+            >
+              <a href="./skills.html">Skills</a>
+            </li>
+            <li
+              class="p-2 hover:scale-110 transition duration-300 ease-in-out hover:text-gray-500"
+            >
+              <a href="#">Contact</a>
+            </li>
+            <li>
+              <a href="https://github.com/hbuhrer"
+                ><img
+                  src="../assets/images/github.svg"
+                  alt="GitHub Link"
+                  class="w-8 h-8 mt-20 mb-2 hover:scale-110 transition duration-300 ease-in-out"
+              /></a>
+              <a href="https://www.linkedin.com/in/hendrich-bührer/"
+                ><img
+                  src="../assets/images/linkedin.svg"
+                  alt="LinkedIn Link"
+                  class="w-7 h-7 mb-2 hover:scale-110 transition duration-300 ease-in-out"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header
+      class="bg-[url('../assets/images/skyline.jpeg')] relative h-150 bg-center bg-cover bg-no-repeat"
+    >
+      <h1 class="flex text-5xl font-bold justify-center items-center p-8">
+        Skills
+      </h1>
+    </header>
+
+    <main
+      class="flex flex-col items-center justify-center mt-0"
+    >
+      <article class="flex justify-center p-8 text-black bg-white w-full mb-4">
+        <section class="flex w-1/4 px-4 justify-center">
+          <a href="#">
+            <img
+              src="../assets/images/js.svg"
+              alt="Placeholder Image"
+              class="max-w-10 hover:scale-110 transition duration-300 ease-in-out"
+            />
+          </a>
+        </section>
+
+        <section class="flex w-1/4 px-4 justify-center">
+          <a href="#">
+            <img
+              src="../assets/images/html.svg"
+              alt="Placeholder Image"
+              class="max-w-10 hover:scale-110 transition duration-300 ease-in-out"
+            />
+          </a>
+        </section>
+
+        <section class="flex w-1/4 px-4 justify-center">
+          <a href="#">
+            <img
+              src="../assets/images/css.svg"
+              alt="Placeholder Image"
+              class="max-w-10 hover:scale-110 transition duration-300 ease-in-out"
+            />
+          </a>
+        </section>
+
+        <section class="flex w-1/4 px-4 justify-center">
+          <a href="#">
+            <img
+              src="../assets/images/php.svg"
+              alt="Placeholder Image"
+              class="max-w-10 hover:scale-110 transition duration-300 ease-in-out"
+            />
+          </a>
+        </section>
+      </article>
+
+      <article
+        class="flex flex-col items-center justify-center p-8 text-xl leading-loose text-center w-full"
+        style="flex: 2"
+      >
+        <div style="max-width: 750px">
+          <p class="mb-4">
+            I specialize in front-end development, creating websites that look
+            great and are easy to use. Using HTML, CSS, and JavaScript, I focus
+            on making web experiences that engage users and work seamlessly on
+            all devices.
+          </p>
+
+          <p class="mb-4">
+            I also have experience in back-end development with PHP, which
+            allows me to build websites with advanced features. This includes
+            things like managing databases, user accounts, and processing data
+            to make websites more powerful and efficient.
+          </p>
+
+          <p class="mb-4">
+            I'm skilled in JavaScript frameworks like Vue.js and Nuxt.js, which
+            help me create scalable web applications with dynamic interfaces and
+            smooth transitions.
+          </p>
+
+          <p class="mb-4">
+            When it comes to design, I use tools like Illustrator, Photoshop,
+            Adobe Creative Cloud, and Figma to create eye-catching graphics.
+            Whether it's custom icons, illustrations, or layouts, I make sure
+            they enhance the overall look and feel of the website.
+          </p>
+
+          <p class="mb-4">
+            In short, my expertise in front-end and back-end development,
+            combined with my design skills, allows me to deliver websites that
+            are not only visually appealing but also functional and
+            user-friendly.
+          </p>
+        </div>
+      </article>
+
+      <article class="flex justify-center p-8 text-black bg-white w-full">
+        <section class="flex w-1/4 px-4 justify-center">
+          <a href="#">
+            <img
+              src="../assets/images/vue.svg"
+              alt="Placeholder Image"
+              class="max-w-10 hover:scale-110 transition duration-300 ease-in-out"
+            />
+          </a>
+        </section>
+
+        <section class="flex w-1/4 px-4 justify-center">
+          <a href="#">
+            <img
+              src="../assets/images/nuxt.svg"
+              alt="Placeholder Image"
+              class="max-w-10 hover:scale-110 transition duration-300 ease-in-out"
+            />
+          </a>
+        </section>
+
+        <section class="flex w-1/4 px-4 justify-center">
+          <a href="#">
+            <img
+              src="../assets/images/illustrator.svg"
+              alt="Placeholder Image"
+              class="max-w-10 hover:scale-110 transition duration-300 ease-in-out"
+            />
+          </a>
+        </section>
+
+        <section class="flex w-1/4 px-4 justify-center">
+          <a href="#">
+            <img
+              src="../assets/images/photoshop.svg"
+              alt="Placeholder Image"
+              class="max-w-10 hover:scale-110 transition duration-300 ease-in-out"
+            />
+          </a>
+        </section>
+      </article>
+    </main>
+
+    <footer class="text-center p-4">&copy; 2024 by Hendrich Buhrer</footer>
+  </body>
+</html>
